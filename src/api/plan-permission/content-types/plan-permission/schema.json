@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_permissions",
+  "info": {
+    "singularName": "plan-permission",
+    "pluralName": "plan-permissions",
+    "displayName": "Plan Permissions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "permission_title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "permission_status": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    },
+    "plans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::membership-plan.membership-plan",
+      "inversedBy": "plan_permissions"
+    },
+    "Name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

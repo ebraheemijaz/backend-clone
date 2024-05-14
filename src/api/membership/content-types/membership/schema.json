@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memberships",
+  "info": {
+    "singularName": "membership",
+    "pluralName": "memberships",
+    "displayName": "Memberships",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "txnId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "txnAmount": {
+      "type": "decimal",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "disabled",
+        "expired",
+        "suspended",
+        "cancelled"
+      ],
+      "default": "active"
+    },
+    "plan_expiry": {
+      "type": "datetime"
+    },
+    "paymentGateway": {
+      "type": "enumeration",
+      "enum": [
+        "stripe",
+        "paypal"
+      ]
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "planId": {
+      "type": "integer"
+    },
+    "views_limit": {
+      "type": "integer"
+    },
+    "views_limit_start_date": {
+      "type": "string"
+    },
+    "plan_started_on": {
+      "type": "datetime"
+    },
+    "plan_type": {
+      "type": "enumeration",
+      "enum": [
+        "Monthly",
+        "Yearly"
+      ]
+    },
+    "credits": {
+      "type": "integer"
+    }
+  }
+}

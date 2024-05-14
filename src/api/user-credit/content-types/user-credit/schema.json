@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_credits",
+  "info": {
+    "singularName": "user-credit",
+    "pluralName": "user-credits",
+    "displayName": "User Credits",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "credits": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "biginteger",
+      "required": true,
+      "default": "50"
+    }
+  }
+}

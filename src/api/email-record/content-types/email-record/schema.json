@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_records",
+  "info": {
+    "singularName": "email-record",
+    "pluralName": "email-records",
+    "displayName": "Email Records",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "unique": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "list_id": {
+      "type": "biginteger"
+    },
+    "company_res": {
+      "type": "text"
+    },
+    "domain_res": {
+      "type": "text"
+    },
+    "appended": {
+      "type": "boolean"
+    }
+  }
+}

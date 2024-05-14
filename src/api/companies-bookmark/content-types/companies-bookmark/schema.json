@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies_bookmarks",
+  "info": {
+    "singularName": "companies-bookmark",
+    "pluralName": "companies-bookmarks",
+    "displayName": "Companies Bookmarks",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "biginteger"
+    },
+    "company_id": {
+      "type": "biginteger"
+    }
+  }
+}

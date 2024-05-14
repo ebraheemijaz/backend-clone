@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_email_lists",
+  "info": {
+    "singularName": "user-email-list",
+    "pluralName": "user-email-lists",
+    "displayName": "User Email Lists",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "list_title": {
+      "type": "text"
+    },
+    "user_id": {
+      "type": "integer"
+    }
+  }
+}
